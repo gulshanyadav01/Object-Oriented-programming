@@ -33,7 +33,8 @@ Types:
 
 Syntax: 
         class Derived-class_Name : visibility Mode Base class-Name
-        By default visibility mode is private 
+
+       ->  By default visibility mode is private 
 
         like:
          class A{
@@ -44,3 +45,13 @@ Syntax:
         class class B : public A{
             // statements 
         }
+
+
+Rules: 
+        -> Private member will not use access in derived class
+
+        -> protected: public -> protected ,protected -> protected
+
+        -> private : pubic -> private , protected -> private 
+
+        -> public : public -> public , protected -> protected  
