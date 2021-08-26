@@ -10,6 +10,7 @@ class rectangle{
         friend int printLength(rectangle); 
 }; 
 
+// access the function without any scope resolution operator 
 int printLength(rectangle rec){
     rec.length = 10; 
     return rec.length;
